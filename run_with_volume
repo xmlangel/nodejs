@@ -1,0 +1,1 @@
+docker run -i -t --name node -v /Users/Kwangmyung/kmdata/working/github_xmlangel/nodejs/nodejs:/nodejs nodejs /bin/bash
