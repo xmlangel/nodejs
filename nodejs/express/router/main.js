@@ -3,13 +3,15 @@ module.exports = function(app, fs)
     app.get('/',function(req,res){
          var sess = req.session;
  
-     app.get('/',function(req,res){
+ 
          res.render('index', {
              title: "MY HOMEPAGE",
-             length: 5
+             length: 5,
+             name: sess.name,
+             username: sess.username
          })
      });
-
+    
      app.get('/list', function (req, res) {
        fs.readFile( __dirname + "/../data/" + "user.json", 'utf8', function (err, data) {
            console.log( data );
