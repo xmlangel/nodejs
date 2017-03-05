@@ -1,1 +1,1 @@
-docker run -i -t --rm -P --name node -v /Users/Kwangmyung/kmdata/working/github_xmlangel/nodejs/nodejs:/nodejs nodejs /bin/bash
+docker run -i -t --rm -P --name node -v $(pwd)/nodejs:/nodejs  --link db:db nodejs /bin/bash
